@@ -11,11 +11,18 @@ function List() {
   
   return (
     <div className="product-list">
-      <ul>
+     
         {products.map((card, index) => (
-          <Card key={index} name={card.name} tag={card.tag} price={card.price} imageSrc={card.imageSrc}/>
+          <Card key={index} name={card.name} tag={card.tag} price={card.price} imageSrc={card.imageSrc} available={card.available}/>
         ))}
-      </ul>
+    
+
+
+
+
+
+
+
 
       {/* <Card 
         name="Titanic" 
