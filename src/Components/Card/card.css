@@ -1,4 +1,11 @@
+
+
 .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
     background-color: rgb(255, 255, 255);
     border-radius: 2rem;
     padding: 1rem;
@@ -7,7 +14,7 @@
     align-content: center;
     text-align: center;
   }
-  
+ 
   .tag {
     border-radius: 50px;
     background-color: rgb(68, 69, 119);
@@ -27,6 +34,12 @@
     margin: 0.5rem 0rem;
   }
   
+  .basket {
+    background-color:floralwhite;
+    height: 300px;
+    border-radius: 10px;
+
+  }
   button {
     background-color: rgb(169, 169, 223);
     padding: 0.5rem 1rem;

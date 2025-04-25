@@ -1,47 +1,20 @@
 import Card from "../Card/Card";
-
+import products from "../../Data/product";
 import "./List.css";
-import products from "../../data/product";
+import CheckboxExample from "../Checkbox/Checkbox";
 
-function Item({ text }) {
-  return <li>{text}</li>;
-}
 
-function List() {
-  
+
+function List({ total, onUpdateTotal, articles, onUpdateArticles, showElements, onUpdateshowElements }) {
   return (
     <div className="product-list">
      
         {products.map((card, index) => (
-          <Card key={index} name={card.name} tag={card.tag} price={card.price} imageSrc={card.imageSrc} available={card.available}/>
+          <Card key={index} name={card.name} tag={card.tag} price={card.price} imageSrc={card.imageSrc} available={card.available} total={total} onUpdateTotal={onUpdateTotal} articles={articles} onUpdateArticles={onUpdateArticles}  showElements={showElements} onUpdateshowElements={onUpdateshowElements} />
         ))}
     
 
-
-
-
-
-
-
-
-      {/* <Card 
-        name="Titanic" 
-        tag="Historique" 
-        price="199.99"
-        imageSrc= "https://www.lego.com/cdn/cs/set/assets/blt6cdf0b53146b5519/10294_Prod.png?format=webply&fit=bounds&quality=100&width=400&height=400&dpr=1"
-      />
-      <Card 
-        name="Millenium Falcon" 
-        tag="Star Wars"
-        price="299.99" 
-        imageSrc="https://www.lego.com/cdn/cs/set/assets/blt3349f56c6f192e18/75192_Prod.png?format=webply&fit=bounds&quality=100&width=400&height=400&dpr=1"
-      />
-      <Card 
-        name="Nuit étoilée de Van Gogh"
-        tag="Art"
-        price="169.99" 
-        imageSrc="https://www.lego.com/cdn/cs/set/assets/blt3349f56c6f192e18/75192_Prod.png?format=webply&fit=bounds&quality=100&width=400&height=400&dpr=1"
-      /> */}
+      
     </div>
   );
 }

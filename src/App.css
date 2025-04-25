@@ -8,3 +8,8 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: rgb(237, 237, 238);
 }
+
+.container {
+  display: flex;
+  
+}
