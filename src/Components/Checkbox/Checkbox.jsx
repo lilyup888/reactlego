@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function CheckboxExample() {
+function CheckboxExample({showElements, onUpdateshowElements}) {
   const [isChecked, setIsChecked] = useState(false);
 
   return (

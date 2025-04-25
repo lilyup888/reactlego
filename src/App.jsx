@@ -12,7 +12,7 @@ function App() {
 
   const [articles, setArticles] = useState([]);
 
-  const [showElements, setshowElements] = useState(true);
+
   
 
 
@@ -21,7 +21,7 @@ function App() {
     <>
       <Header />
       <div className="container">
-      <List total={total} onUpdateTotal={setTotal} articles={articles} onUpdateArticles={setArticles} showElements={showElements} onUpdateshowElements={setshowElements} />
+      <List total={total} onUpdateTotal={setTotal} articles={articles} onUpdateArticles={setArticles}  />
       <Basket total ={total} articles={articles}/>
       </div>
       <Footer />
